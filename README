@@ -1,0 +1,4 @@
+spec file = test file to be executed
+describe = test suite  = it block
+single spec file has multiple describe
+run command:  npx wdio run wdio.conf.js
