@@ -2,3 +2,19 @@ spec file = test file to be executed
 describe = test suite  = it block
 single spec file has multiple describe
 run command:  npx wdio run wdio.conf.js
+Asserrtion in wdio is inbuilt
+Locatorin wdio :
+W dio support xpath, css and linked text as locators
+ CSS: 
+       // -- tagname[attribute=value]
+       // #id
+       // .classname
+XPath:
+   XPath: //tagname[@attribute='value']
+
+Validatig the locating in console of dev tools:
+  $("input[name='username']")  // wrap the locator and hit enter
+  $x("//tagname[@attribute='value']")
+  
+Waitmechanism:
+  method is waitUntill //  browser.waitUntil(condition, { timeout, timeoutMsg, interval })
